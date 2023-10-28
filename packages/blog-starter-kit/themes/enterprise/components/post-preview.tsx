@@ -20,7 +20,7 @@ export const PostPreview = ({ title, coverImage, date, excerpt, slug }: Props) =
 	const postURL = `/${slug}`;
 
 	return (
-		<div className="grid grid-cols-1 gap-5 rounded-xl overflow-hidden border dark:border-none shadow-xl dark:shadow-black bg-green-50 dark:bg-black dark:bg-opacity-10 border-gray-100">
+		<div className="grid grid-cols-1 gap-5 rounded-xl overflow-hidden border dark:border-none shadow-xl dark:shadow-black bg-primary-100 dark:bg-black dark:bg-opacity-10 border-gray-100">
 			<div className="col-span-1">
 				<CoverImage
 					slug={slug}
