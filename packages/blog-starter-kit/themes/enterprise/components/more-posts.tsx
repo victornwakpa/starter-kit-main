@@ -14,7 +14,7 @@ export const MorePosts = ({ posts, context }: Props) => {
 					More Posts
 				</h2>
 			)}
-			<div className="grid items-start gap-5 md:grid-cols-2 xl:grid-cols-3">
+			<div className="grid place-content-center gap-10 md:grid-cols-2 xl:grid-cols-3">
 				{posts.map((post) => (
 					<PostPreview
 						key={post.slug}
