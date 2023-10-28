@@ -7,10 +7,10 @@ export const Footer = () => {
 	const { publication } = useAppContext();
 	const PUBLICATION_LOGO = publication.preferences.logo;
 	return (
-		<footer className="border-t py-20 dark:border-neutral-800 ">
+		<footer className="border-t py-20 dark:border-neutral-800">
 			<Container className="px-5">
 				{PUBLICATION_LOGO ? (
-					<div className="mb-20 flex w-full flex-row justify-center">
+					<div className="mb-14 flex w-full flex-row justify-center">
 						<Link
 							href={'/'}
 							aria-label={`${publication.title} home page`}
@@ -20,118 +20,25 @@ export const Footer = () => {
 						</Link>
 					</div>
 				) : (
-					<p className="mb-20 text-center text-xl font-semibold text-white md:text-4xl">
+					<p className="mb-14 text-center text-xl font-semibold text-slate-900 dark:text-white md:text-4xl">
 						{publication.title}
 					</p>
 				)}
-				<div className="grid w-full grid-cols-3 gap-5 md:grid-cols-6 lg:grid-cols-5">
-					<div className="col-span-1 grid grid-cols-4 gap-5 md:col-span-4 lg:col-span-3">
-						<div className="col-span-full md:col-span-2 lg:col-span-1">
-							<p className="mb-2 font-semibold text-slate-600 dark:text-neutral-200">
-								Stay in touch
-							</p>
-							<ul className="flex flex-col gap-1 text-slate-700 dark:text-neutral-300">
-								<li>
-									<a href="#" className="hover:underline">
-										Contact us
-									</a>
-								</li>
-								<li>
-									<a href="#" className="hover:underline">
-										Book a demo
-									</a>
-								</li>
-								<li>
-									<a href="#" className="hover:underline">
-										Newsletter
-									</a>
-								</li>
-								<li>
-									<a href="#" className="hover:underline">
-										Slack
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div className="col-span-full md:col-span-2 lg:col-span-1">
-							<p className="mb-2 font-semibold text-slate-600 dark:text-neutral-200">Resources</p>
-							<ul className="flex flex-col gap-1 text-slate-700 dark:text-neutral-300">
-								<li>
-									<a href="#" className="hover:underline">
-										Community
-									</a>
-								</li>
-								<li>
-									<a href="#" className="hover:underline">
-										Use Cases
-									</a>
-								</li>
-								<li>
-									<a href="#" className="hover:underline">
-										Source Code
-									</a>
-								</li>
-								<li>
-									<a href="#" className="hover:underline">
-										Blog
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div className="col-span-full md:col-span-2 lg:col-span-1">
-							<p className="mb-2 font-semibold text-slate-600 dark:text-neutral-200">Product</p>
-							<ul className="flex flex-col gap-1 text-slate-700 dark:text-neutral-300">
-								<li>
-									<a href="#" className="hover:underline">
-										Pricing
-									</a>
-								</li>
-								<li>
-									<a href="#" className="hover:underline">
-										Documentation
-									</a>
-								</li>
-								<li>
-									<a href="#" className="hover:underline">
-										Integrations
-									</a>
-								</li>
-								<li>
-									<a href="#" className="hover:underline">
-										Support
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div className="col-span-1">
-							<p className="mb-2 font-semibold text-slate-600 dark:text-neutral-200">Other links</p>
-							<ul className="flex flex-col gap-1 text-slate-700 dark:text-neutral-300">
-								<li>
-									<a href="#" className="hover:underline">
-										Events
-									</a>
-								</li>
-								<li>
-									<a href="#" className="hover:underline">
-										Careers
-									</a>
-								</li>
-								<li>
-									<a href="#" className="hover:underline">
-										Newsroom
-									</a>
-								</li>
-								<li>
-									<a href="#" className="hover:underline">
-										About us
-									</a>
-								</li>
-							</ul>
+				<div className="flex flex-col w-full gap-5">
+					<div className="flex flex-col md:flex-row justify-center gap-3 items-center">
+						<p className="text-base dark:text-white">Powered by</p>
+						<div className="flex items-center border rounded-xl px-4 py-2 bg-slate-50 dark:bg-transparent dark:text-slate-100 gap-3">
+							<div>
+								<svg className="w-8" viewBox="0 0 337 337" fill="none">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M23.155 112.598c-30.873 30.874-30.873 80.93 0 111.804l89.443 89.443c30.874 30.873 80.93 30.873 111.804 0l89.443-89.443c30.873-30.874 30.873-80.93 0-111.804l-89.443-89.443c-30.874-30.873-80.93-30.873-111.804 0l-89.443 89.443zm184.476 95.033c21.612-21.611 21.612-56.651 0-78.262-21.611-21.612-56.651-21.612-78.262 0-21.612 21.611-21.612 56.651 0 78.262 21.611 21.612 56.651 21.612 78.262 0z" fill="#2962FF"/>
+								</svg>
+							</div>
+							<p className="font-semibold text-base">Headless Hashnode</p>
 						</div>
 					</div>
-					<div className="col-span-2 flex flex-col items-end gap-5 text-right text-slate-600 dark:text-neutral-300 md:text-left">
+					<div className="col-span-2 flex flex-col md:flex-row justify-center items-center gap-5 text-right text-slate-600 dark:text-neutral-300 md:text-left sm:mt-4">
 						<SocialLinks />
-						<p>&copy; 2023 Company Inc.</p>
+						<p>&copy; 2023 Victorious Insight.</p>
 						<p>
 							<a href="#" className="hover:underline">
 								Privacy Policy
