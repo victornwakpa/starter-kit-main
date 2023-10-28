@@ -121,7 +121,7 @@ export default function Index({ publication, initialAllPosts, initialPageInfo }:
 					/>
 				</Head>
 				<Header />
-				<Container className="flex flex-col items-stretch gap-10 px-5 pb-10">
+				<Container className="font-poppins flex flex-col items-stretch gap-10 px-5 pb-10">
 					<Navbar />
 
 					{allPosts.length === 0 && (
@@ -137,7 +137,7 @@ export default function Index({ publication, initialAllPosts, initialPageInfo }:
 						</div>
 					)}
 
-					<div className="grid items-start gap-6 xl:grid-cols-2">
+					<div className="grid items-start gap-6 xl:grid-cols-2 border dark:border-none p-10 bg-green-50 dark:bg-black shadow-lg rounded-lg">
 						<div className="col-span-1">
 							{firstPost && (
 								<HeroPost
@@ -156,11 +156,12 @@ export default function Index({ publication, initialAllPosts, initialPageInfo }:
 					</div>
 
 					{allPosts.length > 0 && (
-						<div className="bg-primary-50 grid grid-cols-4 rounded-lg px-5 py-5 dark:bg-neutral-900 md:py-10">
+						<div className="bg-primary-50 grid grid-cols-4 shadow-lg rounded-lg px-5 py-5 dark:bg-subscribebg md:py-10">
 							<div className="col-span-full md:col-span-2 md:col-start-2">
-								<h2 className="text-primary-600 dark:text-primary-500 mb-5 text-center text-lg font-semibold">
-									Subscribe to our newsletter for updates and changelog.
+								<h2 className="text-primary-600 dark:text-primary-500 mb-5 text-center text-3xl font-semibold">
+									Subscribe to our newsletter
 								</h2>
+								<p className="text-center dark:text-white mb-5">Stay in the loop with <span className="font-semibold text-lg text-green-500 tracking-wider">{publication.title}!</span> Get our latest articles delivered straight to your inbox. Subscribe to our newsletter today and never miss out on insightful content.</p>
 								<SubscribeForm />
 							</div>
 						</div>
