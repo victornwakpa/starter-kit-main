@@ -29,7 +29,7 @@ export const Header = () => {
 						href={item.url}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="transition-200 block max-w-[200px] truncate text-ellipsis whitespace-nowrap rounded-full p-2 transition-colors hover:bg-white hover:text-black dark:hover:bg-neutral-800 dark:hover:text-white"
+						className="transition-200 block max-w-[200px] truncate text-ellipsis whitespace-nowrap rounded-full p-2 transition-colors hover:bg-slate-50 hover:text-black dark:hover:bg-green-900 dark:hover:text-white"
 					>
 						{item.label}
 					</a>
@@ -99,7 +99,7 @@ export const Header = () => {
 									<span className="text-xl font-semibold text-white md:text-3xl">Blog</span>
 								</>
 							) : (
-								<span className="text-xl font-semibold text-white md:text-4xl">
+								<span className="text-xl font-semibold text-white md:text-3xl">
 									{publication.title}
 								</span>
 							)}

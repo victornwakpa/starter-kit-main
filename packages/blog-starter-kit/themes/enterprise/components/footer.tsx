@@ -27,14 +27,17 @@ export const Footer = () => {
 				<div className="flex flex-col w-full gap-5">
 					<div className="flex flex-col md:flex-row justify-center gap-3 items-center">
 						<p className="text-base dark:text-white">Powered by</p>
-						<div className="flex items-center dark:border border-2 border-gray-300 rounded-xl px-4 py-2 bg-slate-50 dark:bg-transparent dark:text-slate-100 gap-3">
+						<Link
+						href={'https://hashnode.com/headless'}
+						target='_blank'
+						 className="flex items-center dark:border border-2 border-gray-300 rounded-xl px-4 py-2 bg-slate-50 dark:bg-transparent dark:text-slate-100 gap-3">
 							<div>
 								<svg className="w-8" viewBox="0 0 337 337" fill="none">
 									<path fill-rule="evenodd" clip-rule="evenodd" d="M23.155 112.598c-30.873 30.874-30.873 80.93 0 111.804l89.443 89.443c30.874 30.873 80.93 30.873 111.804 0l89.443-89.443c30.873-30.874 30.873-80.93 0-111.804l-89.443-89.443c-30.874-30.873-80.93-30.873-111.804 0l-89.443 89.443zm184.476 95.033c21.612-21.611 21.612-56.651 0-78.262-21.611-21.612-56.651-21.612-78.262 0-21.612 21.611-21.612 56.651 0 78.262 21.611 21.612 56.651 21.612 78.262 0z" fill="#2962FF"/>
 								</svg>
 							</div>
 							<p className="font-semibold text-base">Headless Hashnode</p>
-						</div>
+						</Link>
 					</div>
 					<div className="col-span-2 flex flex-col md:flex-row justify-center items-center gap-5 text-right text-slate-600 dark:text-neutral-300 md:text-left sm:mt-4">
 						<SocialLinks />
