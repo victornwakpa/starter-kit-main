@@ -25,7 +25,7 @@ module.exports = {
 				tighter: '-.04em',
 			},
 			lineHeight: {
-				tight: 1.6,
+				tight: 4.6,
 			},
 			fontSize: {
 				'5xl': '2.5rem',
